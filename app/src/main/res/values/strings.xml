@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">OjolFirebase</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account_signup">Don\'t have account? SignUp</string>
+    <string name="or">or</string>
+    <string name="signup_with_google">SignUp with google</string>
+    <string name="nama">Nama</string>
+    <string name="hp">hp</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="history">history</string>
+    <string name="profile">profile</string>
+    <string name="cileungsi_bogor">Cileungsi, Bogor</string>
+    <string name="nama_">Nama</string>
+    <string name="aisyah">Sitiaisyah</string>
+    <string name="email_">Email</string>
+    <string name="gmail">sitiaisyahkg@gmail.com</string>
+    <string name="dari_mana">dari mana?</string>
+    <string name="rp_50_000">Rp 50.000</string>
+    <string name="estimasi_waktu">estimasi waktu</string>
+    <string name="_3menit">3 menit</string>
+    <string name="pesan">Pesan</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="input_nomer_hp">Masukkan Nomor Hp</string>
+    <string name="nama_driver">nama Driver</string>
+</resources>
