@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.request.detail.DetailRequest">
+
+    <LinearLayout
+        android:id="@+id/up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/cileungsi_bogor"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:src="@drawable/pin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp" >
+
+            <TextView
+                android:id="@+id/detail_awal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:lines="2"
+                android:text="@string/cileungsi_bogor"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/detail_tujuan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_below="@id/detail_awal"
+                android:lines="2"
+                android:text="@string/cileungsi_bogor"
+                android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_price"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/rp_50_000"/>
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:id="@+id/idd"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapsdetail"
+        android:layout_below="@id/up_button"
+        android:layout_above="@id/detail_button"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_booking"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_margin="4dp"
+        android:id="@+id/detail_button"/>
+
+
+</RelativeLayout>
