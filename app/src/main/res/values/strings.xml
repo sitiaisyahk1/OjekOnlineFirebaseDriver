@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OjolFirebase</string>
+    <string name="app_name">OjolFirebaseDriver</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -29,4 +29,10 @@
     <string name="sign_up">Sign Up</string>
     <string name="input_nomer_hp">Masukkan Nomor Hp</string>
     <string name="nama_driver">nama Driver</string>
+    <string name="request">Request</string>
+    <string name="handle">Handle</string>
+    <string name="complete">Complete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_booking">take Booking</string>
 </resources>

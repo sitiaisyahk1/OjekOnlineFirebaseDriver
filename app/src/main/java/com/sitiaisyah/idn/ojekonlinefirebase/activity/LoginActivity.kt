@@ -15,6 +15,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.iid.FirebaseInstanceId
 import com.sitiaisyah.idn.ojekonlinefirebase.MainActivity
 import com.sitiaisyah.idn.ojekonlinefirebase.R
 import com.sitiaisyah.idn.ojekonlinefirebase.model.Users
@@ -163,12 +164,19 @@ class LoginActivity : AppCompatActivity() {
     //todo 9
     //menambahkan data user ke realtime database
     private fun insertUser(name: String, email: String,
-                           hp: String, idUser: String?): Boolean {
+                           hp: String, uid: String?): Boolean {
+
+        val token = FirebaseInstanceId.getInstance().token
+
         val user = Users()
         user.email = email
         user.name = name
         user.hp = hp
-        user.uid = auth?.uid
+        user.uid = uid
+        user.active = true
+        user.token = token
+        user.latitude = "0.0"
+        user.longitude = "0.0"
 
         val database = FirebaseDatabase.getInstance()
         val key = database.reference.push().key

@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.iid.FirebaseInstanceId
 import com.sitiaisyah.idn.ojekonlinefirebase.R
 import com.sitiaisyah.idn.ojekonlinefirebase.model.Users
 import com.sitiaisyah.idn.ojekonlinefirebase.utils.Constan
@@ -69,12 +70,17 @@ class SignUpActivity : AppCompatActivity() {
     fun insertUser(name: String, email: String,
                    hp: String, users: FirebaseUser)
             : Boolean {
+        val token = FirebaseInstanceId.getInstance().token
 
         var user = Users()
         user.uid = users.uid
         user.name = name
         user.email = email
         user.hp = hp
+        user.active = true
+        user.token = token
+        user.latitude = "0.0"
+        user.longitude = "0.0"
 
         val database = FirebaseDatabase.getInstance()
 

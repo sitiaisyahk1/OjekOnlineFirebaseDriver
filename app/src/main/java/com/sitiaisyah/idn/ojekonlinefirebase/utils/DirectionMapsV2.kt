@@ -5,7 +5,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.PolylineOptions
 
-class DirectionMapsV2 {
+object DirectionMapsV2 {
 
     //menggabungkan titik koordinat jadi sebuah garis
     internal fun gambarRoute(map: GoogleMap, dataPoly: String){
